@@ -35,6 +35,7 @@ public class readProperty {
 
 				propertyClass.getBrowser();
 				String topic = propertyClass.getTopic();
+				Thread.sleep(6000);
 				driver.findElement(By.xpath("/html/body/div[4]/div/a[1]")).click();
 				driver.findElement(By.xpath("//*[@id=\"gsc-i-id1\"]")).sendKeys(topic);
 		
@@ -47,7 +48,5 @@ public class readProperty {
 		driver.quit();
 		}
 	
-
-
 
 }
